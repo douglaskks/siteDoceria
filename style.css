@@ -1,0 +1,111 @@
+/*Estilo geral do html*/
+
+html{
+	font-family: 'Open sans', 'sans-serif';
+	background-color: #f5f5dc;
+}
+
+nav{
+	text-decoration: none;
+	padding-top: 1rem;
+	text-align: left;
+}
+
+h1{
+	font-family: 'Rubik Bubbles';
+	font-size: 1.4rem;
+	color: #f5f5dc;
+}
+
+#sidebar{
+	position: fixed;
+	background-color: #9D036C;
+	height: 100%;
+	width: 15rem;
+	text-align: center;
+}
+
+#sidebar a{
+	text-decoration: none;
+	color: #f5f5dc;
+	padding-left: 4rem;
+}
+
+#sidebar li{
+	padding-top: 1.5rem;
+}
+
+.sidebar-container{
+	padding-top: 2rem;
+}
+
+.sidebar-container img{
+	height: 75px;
+	width: 75px;
+	padding: 0.9rem;
+}
+
+.content{
+	position: absolute;
+	left: 15rem;
+	width: calc(100% - 15rem)
+}
+
+.content h1, .content h2{
+	color: black;
+}
+
+section{
+	padding-left: 1rem;
+}
+
+/* Bem vindo */
+
+#sessao-bemvindo{
+	padding-left: 0;
+}
+
+.sessao-bem-vindo-content{
+	padding-left: 50px;
+}
+
+#sessao-bemvindo .banner{
+	height: 500px;
+	background-image: url('images/banner2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.sessao-bem-vindo-content h1{
+	font-size: 48px;
+	padding: 3rem;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after{
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 2rem;
+}
+
+.sessao-minibanner{
+	width: 300px;
+	height: 400px;
+	background-image: url(images/banner3.jpg);
+	background-position: center;
+	background-size: cover;
+	float: left;
+}
+
+.sessao-descricao{
+	position: absolute;
+	left: 370px;
+	padding-right: 30px;
+}
+
+.sessao-descricao p{
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
