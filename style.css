@@ -1,0 +1,252 @@
+/*Estilo geral do html*/
+
+html{
+	font-family: 'Open sans', 'sans-serif';
+	background-color: #f5f5dc;
+}
+
+nav{
+	text-decoration: none;
+	padding-top: 1rem;
+	text-align: left;
+}
+
+h1{
+	font-family: 'Rubik Bubbles';
+	font-size: 1.4rem;
+	color: #f5f5dc;
+}
+
+#sidebar{
+	position: fixed;
+	background-color: #9D036C;
+	height: 100%;
+	width: 15rem;
+	text-align: center;
+}
+
+#sidebar a{
+	text-decoration: none;
+	color: #f5f5dc;
+	padding-left: 4rem;
+}
+
+#sidebar li{
+	padding-top: 1.5rem;
+}
+
+.sidebar-container{
+	padding-top: 2rem;
+}
+
+.sidebar-container img{
+	height: 75px;
+	width: 75px;
+	padding: 0.9rem;
+}
+
+.content{
+	position: absolute;
+	left: 15rem;
+	width: calc(100% - 15rem)
+}
+
+.content h1, .content h2{
+	color: black;
+}
+
+section{
+	padding-left: 1rem;
+}
+
+/* Bem vindo */
+
+#sessao-bemvindo{
+	padding-left: 0;
+}
+
+.sessao-bem-vindo-content{
+	padding-left: 50px;
+}
+
+#sessao-bemvindo .banner{
+	height: 500px;
+	background-image: url('images/banner2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.sessao-bem-vindo-content h1{
+	font-size: 48px;
+	padding: 3rem;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after{
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 2rem;
+	padding: 2rem;
+}
+
+.sessao-minibanner{
+	width: 300px;
+	height: 400px;
+	background-image: url(images/banner3.jpg);
+	background-position: center;
+	background-size: cover;
+	float: left;
+}
+
+.sessao-descricao{
+	position: absolute;
+	left: 370px;
+	padding-right: 0.5rem;
+}
+
+.sessao-descricao p{
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]{
+	background-color: #9D036C;
+	text-decoration: none;
+	padding: 10px 20px;
+	transition: .5s;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover{
+	background-color: #f5f5dc;
+}
+
+a{
+	text-decoration: none;	
+}
+
+#sessao-sobre .sessao-descricao{
+	position: absolute;
+	left: 25px;
+	width: calc(100% - 400px);
+
+}
+
+#sessao-sobre .sessao-minibanner{
+	background-position: right;
+	float: right;
+}
+
+#sessao-sobre{
+	max-width: 1200px;
+}
+
+/*Galerias*/
+
+.banner-galeria{
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	height: 200px;
+}
+
+#sessao-doces, #sessao-salgados, #sessao-bolos{
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+
+.doce1-img{
+	width: 18.8%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img1{
+	background-image: url('images/galeria1.jpg');
+	margin-left: 0;
+}
+
+#img2{
+	background-image: url('images/galeria2.jpg');
+}
+
+#img3{
+	background-image: url('images/galeria3.jpg');
+}
+
+#img4{
+	background-image: url('images/galeria4.jpg');
+}
+
+#img5{
+	background-image: url('images/galeria5.jpg');
+	margin-right: 0;
+}
+
+.salgados-img{
+	width: 32.3%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img6{
+	background-image: url('images/galeria6.jpg');
+	margin-left: 0;
+}
+
+#img7{
+	background-image: url('images/galeria7.jpg');
+}
+
+#img8{
+	background-image: url('images/galeria8.jpg');
+	margin-right: 0;
+}
+
+.bolos-img{
+	width: 23.9%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img9{
+	background-image: url('images/galeria9.jpg');
+	margin-left: 0;
+}
+
+#img10{
+	background-image: url('images/galeria10.jpg');
+}
+
+#img11{
+	background-image: url('images/galeria11.jpg');
+}
+
+#img12{
+	background-image: url('images/galeria12.jpg');
+	margin-right: 0;
+}
+
+/* Informações contato */
+
+#form-contato{
+		width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea{
+	display: block;
+	border: 1px solid #006599;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus{
+	border-color: #9D036C;
+}
